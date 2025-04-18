@@ -7,10 +7,12 @@ public class Biblioteca {
     private ArrayList<Usuario> usuarios;
     private ArrayList<Libro> libros;
     private static Biblioteca instancia;
+   
     
     public Biblioteca() {
         usuarios = new ArrayList<>();
         libros = new ArrayList<>();
+    
     }
 
     public static Biblioteca getInstancia() {
@@ -52,7 +54,7 @@ public class Biblioteca {
         return true;
     }
 
-    public void prestarLibro(int documentoUsuario, int idLibro) {
+    public boolean prestarLibro(int documentoUsuario, int idLibro) {
         Usuario usuario = buscarUsuario(documentoUsuario);
         if (usuario == null) {
             int respuesta = JOptionPane.showConfirmDialog(null, 
@@ -62,7 +64,7 @@ public class Biblioteca {
             if (respuesta == JOptionPane.YES_OPTION) {
                 new CrearUsuario().setVisible(true); // Abre ventana CrearUsuario
             }
-            return;
+            return false;
         }
 
         Libro libro = buscarLibro(idLibro);
@@ -74,16 +76,19 @@ public class Biblioteca {
             if (respuesta == JOptionPane.YES_OPTION) {
                 new CrearLibro().setVisible(true); // Abre ventana CrearLibro
             }
-            return;
+            return false;
         }
 
         if (!libro.is_esta_prestado()) {
             libro.prestar();
             usuario.agregarLibroPrestado(libro.get_identificador());
+            
             JOptionPane.showMessageDialog(null, "Libro prestado exitosamente.");
         } else {
             JOptionPane.showMessageDialog(null, "El libro ya está prestado.");
         }
+        return true;
+        
     }
 
     public void devolverLibro(int documentoUsuario, int idLibro) {

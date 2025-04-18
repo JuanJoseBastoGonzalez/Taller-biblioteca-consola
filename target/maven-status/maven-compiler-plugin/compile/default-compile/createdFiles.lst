@@ -16,10 +16,12 @@ com/mycompany/taller/biblioteca/consola/Biblioteca.class
 com/mycompany/taller/biblioteca/consola/DevolverLibro$1.class
 com/mycompany/taller/biblioteca/consola/PrestarLibro$1.class
 com/mycompany/taller/biblioteca/consola/MenuPrincipal$3.class
-com/mycompany/taller/biblioteca/consola/CrearLibro$1.class
 com/mycompany/taller/biblioteca/consola/Usuario.class
-com/mycompany/taller/biblioteca/consola/MenuPrincipal.class
+com/mycompany/taller/biblioteca/consola/CrearLibro$1.class
+com/mycompany/taller/biblioteca/consola/Tables.class
+com/mycompany/taller/biblioteca/consola/Tables$1.class
 com/mycompany/taller/biblioteca/consola/MenuPrincipal$2.class
+com/mycompany/taller/biblioteca/consola/MenuPrincipal.class
 com/mycompany/taller/biblioteca/consola/CrearLibro.class
 com/mycompany/taller/biblioteca/consola/PrestarLibro$3.class
 com/mycompany/taller/biblioteca/consola/DevolverLibro$3.class

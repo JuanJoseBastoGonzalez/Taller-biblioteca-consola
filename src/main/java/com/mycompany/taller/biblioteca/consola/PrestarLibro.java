@@ -7,13 +7,15 @@ package com.mycompany.taller.biblioteca.consola;
 import java.awt.Window;
 import javax.swing.SwingUtilities;
 import java.awt.Component;
+import javax.swing.JOptionPane;
 /**
  *
  * @author chimu
  */
 public class PrestarLibro extends javax.swing.JFrame {
 Biblioteca biblioteca = Biblioteca.getInstancia();
-    /**
+Tables tables = Tables.getInstancia();
+/**
      * Creates new form PrestarLibro
      */
     public PrestarLibro() {
@@ -188,8 +190,14 @@ window.dispose();
 int documento = Integer.parseInt(id_usuario_prestamo.getText());
 int libro = Integer.parseInt(prestar_id.getText());
 
-biblioteca.prestarLibro(documento, libro);
-// TODO add your handling code here:
+
+if (biblioteca.prestarLibro(documento, libro)){
+
+            tables.setVisible(true);
+            tables.Agregar(prestar_titulo.getText(), id_usuario_prestamo.getText(),prestar_id.getText());
+// TODO add your handling code here:}
+}else{
+    JOptionPane.showConfirmDialog(null,"ERROR CON LOS DATOS INGRESADOS","ERORR",JOptionPane.ERROR_MESSAGE);}
     }//GEN-LAST:event_guardar_prestamoActionPerformed
 
 
