@@ -47,6 +47,9 @@ Biblioteca biblioteca = Biblioteca.getInstancia();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("MENU CREAR LIBRO");
 
         jButton1.setText("x");
@@ -78,6 +81,8 @@ Biblioteca biblioteca = Biblioteca.getInstancia();
                 .addComponent(jButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel2.setText("Ingrese el título del libro:");
 

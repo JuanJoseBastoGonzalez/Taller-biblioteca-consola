@@ -7,6 +7,7 @@ com/mycompany/taller/biblioteca/consola/Libro.class
 com/mycompany/taller/biblioteca/consola/PrestarLibro$2.class
 com/mycompany/taller/biblioteca/consola/PrestarLibro.class
 com/mycompany/taller/biblioteca/consola/MenuPrincipal$1.class
+com/mycompany/taller/biblioteca/consola/MenuPrincipal$6.class
 com/mycompany/taller/biblioteca/consola/DevolverLibro$2.class
 com/mycompany/taller/biblioteca/consola/Recurso.class
 com/mycompany/taller/biblioteca/consola/CrearUsuario$2.class
